@@ -158,18 +158,6 @@ image_id = "VOA_EN_NW_2016.05.11.3325807_1"
 }
 ```
 
-## Model Architectures
-
-### T1 & T2: BERT-based Models
-- Base Model: BERT-base-uncased
-- T1 adds CRF layer for sequence labeling
-- T2 uses pooled output for classification
-
-### T3 & T4: CLIP-based Models
-- Base Model: OpenAI CLIP-ViT-Base-Patch32
-- Uses visual encoder for image understanding
-- Processes full images (T3) or cropped regions (T4)
-
 ## Usage Examples
 
 ### Training a Task
