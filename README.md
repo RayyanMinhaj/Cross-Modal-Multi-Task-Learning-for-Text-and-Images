@@ -172,42 +172,13 @@ image_id = "VOA_EN_NW_2016.05.11.3325807_1"
 
 ## Usage Examples
 
-### Loading Custom Data
+### Training a Task
 
 ```python
-import json
-
-# Load text data
-with open("data/sample_text_input.json", "r") as f:
-    text_data = json.load(f)
-
-# Load image data
-with open("data/sample_img_input.json", "r") as f:
-    img_json = json.load(f)
-
-# Find specific entries
-sentence_obj = next((item for item in text_data if item["sentence_id"] == sentence_id), None)
-img_obj = img_json.get(image_id)
+python t4_role_classification.py
 ```
 
-### Running Individual Tasks
 
-```python
-import torch
-from transformers import BertTokenizerFast
-
-# T1: Trigger Detection
-tokenizer = BertTokenizerFast.from_pretrained("bert-base-uncased")
-enc = tokenizer(sentence, return_tensors="pt", truncation=True).to(device)
-with torch.no_grad():
-    best_path = t1_model(enc["input_ids"], enc["attention_mask"])
-
-# T3: Image Classification
-inputs = processor.image_processor(image, return_tensors="pt")["pixel_values"].to(device)
-with torch.no_grad():
-    logits = t3_model(images=inputs)
-    pred_id = torch.argmax(logits, dim=1).item()
-```
 
 ## Datasets
 
