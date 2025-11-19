@@ -1,0 +1,140 @@
+[
+    {
+        "sentence_id": "VOA_EN_NW_2017.02.02.3702962_1",
+        "sentence": "The Post report said Trump had described the call with the leader of Australia, one of the United States\u2019 staunchest allies, as \u201cthe worst so far.",
+        "golden-event-mentions": [
+            {
+                "trigger": {
+                    "start": 8,
+                    "end": 9,
+                    "text": "call"
+                },
+                "event_type": "Contact:Phone-Write",
+                "arguments": [
+                    {
+                        "role": "Entity",
+                        "start": 4,
+                        "end": 5,
+                        "text": "Trump"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sentence_id": "VOA_EN_NW_2017.02.03.3705362_2",
+        "sentence": "He said, however, that despite the capability for the U.S. to send more forces to the Middle East, \u201cright now, I don\u2019t think it\u2019s necessary.",
+        "golden-event-mentions": [
+            {
+                "trigger": {
+                    "start": 13,
+                    "end": 14,
+                    "text": "send"
+                },
+                "event_type": "Movement:Transport",
+                "arguments": [
+                    {
+                        "role": "Agent",
+                        "start": 11,
+                        "end": 12,
+                        "text": "U.S."
+                    },
+                    {
+                        "role": "Artifact",
+                        "start": 15,
+                        "end": 16,
+                        "text": "forces"
+                    },
+                    {
+                        "role": "Destination",
+                        "start": 18,
+                        "end": 20,
+                        "text": "Middle East"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sentence_id": "VOA_EN_NW_2016.06.27.3393616_20",
+        "sentence": "Video size-width-x-height-pixels-Students Protest Facebook Cheating Scandal in Egypt-Share this video-0:01:08-\u25b6-0:00:00-/0:01:08-\u25b6-\u25b6-Direct link-270p | 3.2MB-360p | 5.3MB-720p | 28.3MB-Protest ban-Other recent demonstrations have been more tense than Monday's march, with scores of arrests following April protests against the pending transfer of two islands from Egypt to Saudi Arabia",
+        "golden-event-mentions": [
+            {
+                "trigger": {
+                    "start": 54,
+                    "end": 55,
+                    "text": "arrests"
+                },
+                "event_type": "Justice:Arrest-Jail",
+                "arguments": []
+            }
+        ]
+    },
+    {
+        "sentence_id": "VOA_EN_NW_2016.05.12.3327048_8",
+        "sentence": "He added that one of the militant leaders, Omar Khalid Khorasani, whose group Jamaat-ul-Ahrar claimed responsibility for an Easter bombing in Lahore in March that killed more than 70 people, was supposed to be getting support from the Afghan intelligence agencies",
+        "golden-event-mentions": [
+            {
+                "trigger": {
+                    "start": 27,
+                    "end": 28,
+                    "text": "killed"
+                },
+                "event_type": "Life:Die",
+                "arguments": [
+                    {
+                        "role": "Place",
+                        "start": 23,
+                        "end": 24,
+                        "text": "Lahore"
+                    }
+                ]
+            },
+            {
+                "trigger": {
+                    "start": 21,
+                    "end": 22,
+                    "text": "bombing"
+                },
+                "event_type": "Conflict:Attack",
+                "arguments": [
+                    {
+                        "role": "Place",
+                        "start": 23,
+                        "end": 24,
+                        "text": "Lahore"
+                    },
+                    {
+                        "role": "Attacker",
+                        "start": 15,
+                        "end": 16,
+                        "text": "Jamaat-ul-Ahrar"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "sentence_id": "VOA_EN_NW_2016.10.13.3549797_27",
+
+        "sentence": "\u201cThe government of Iraq is working with the U.N. and nongovernment organizations to plan for the internally displaced persons that may flee the fighting in Mosul,\u201d he said", 
+        "golden-event-mentions": [
+            {
+                "trigger": {
+                    "start": 24,
+                    "end": 25,
+                    "text": "fighting"
+                },
+                "event_type": "Conflict:Attack",
+                "arguments": [
+                    {
+                        "role": "Place",
+                        "start": 26,
+                        "end": 27,
+                        "text": "Mosul"
+                    }
+                ]
+            }
+        ]
+    }
+]
